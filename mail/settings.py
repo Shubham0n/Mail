@@ -122,11 +122,6 @@ STATICFILES = [ BASE_DIR / "static" ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-# pip install django-environ 
-import environ
-
-env = environ.Env()
-environ.Env.read_env()
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_PORT = 587  
@@ -135,8 +130,30 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = '5048shubham2028@gmail.com'  
 EMAIL_HOST_PASSWORD = 'ndsqxxjokhwxscjq'  
 
-# RECIPIENT_ADDRESS = 'shubhamp.tagline@gmail.com'
 
+'''
+pip install django-environ 
+'''
+# import environ
+
+# env = environ.Env()
+# environ.Env.read_env()
+
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# EMAIL_PORT = 587  
+# EMAIL_USE_TLS = True  
+# EMAIL_HOST = 'smtp.gmail.com'  
+# EMAIL_HOST_USER = '5048shubham2028@gmail.com'  
+# EMAIL_HOST_PASSWORD = 'ndsqxxjokhwxscjq'  
+
+'''
+when you have sigle or spacific mail
+'''
+# RECIPIENT_ADDRESS = 'shubhamp.tagline@gmail.com' 
+
+'''
+after above process run in terminal
+'''
 # python manage.py shell
 # >>> from django.core.mail import send_mail
 # >>> from django.conf import settings

@@ -36,3 +36,7 @@ class ContactForm(forms.Form):
             from_email=settings.EMAIL_HOST_USER,
             recipient_list=[from_email]
         )
+        '''
+        when you want to use RECIPIENT_ADDRESS email which is in settings.py
+        '''
+        # recipient_list=[settings.RECIPIENT_ADDRESS]
